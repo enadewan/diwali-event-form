@@ -31,76 +31,76 @@
   </header>
 
   <section class="facts">
-    <div class="fact"><div class="ico">📅</div><div><strong>Date</strong><span>1st November</span></div></div>
-    <div class="fact"><div class="ico">🕚</div><div><strong>Time</strong><span>11.00/12.00 to 16.00</span></div></div>
-    <div class="fact"><div class="ico">👥</div><div><strong>Registration</strong><span>By prebooking only</span></div></div>
-    <div class="fact"><div class="ico">📍</div><div><strong>Address</strong><span>Chalet India<br>Oberdorfstrasse 51, 8810 Horgen</span></div></div>
-    <div class="fact"><div class="ico">🛡️</div><div><strong>Insurance</strong><span>Participants own insurance</span></div></div>
+    <div class="fact"><div class="ico">📅</div><div><strong>Datum / Date</strong><span>1st November</span></div></div>
+    <div class="fact"><div class="ico">🕚</div><div><strong>Zeit / Time</strong><span>11.00/12.00 to 16.00</span></div></div>
+    <div class="fact"><div class="ico">👥</div><div><strong>Anmeldung / Registration</strong><span>Nur mit Voranmeldung / By prebooking only</span></div></div>
+    <div class="fact"><div class="ico">📍</div><div><strong>Adresse / Address</strong><span>Chalet India<br>Oberdorfstrasse 51, 8810 Horgen</span></div></div>
+    <div class="fact"><div class="ico">🛡️</div><div><strong>Versicherung / Insurance</strong><span>Eigene Versicherung / Participants own insurance</span></div></div>
   </section>
 
   <div class="content">
     <main class="panel form-panel">
-      <h2 class="section-title"><span class="lamp">🪔</span> Registration Form</h2>
-      <p class="sub">Please fill in the details below.</p>
+      <h2 class="section-title"><span class="lamp">🪔</span> Anmeldeformular / Registration Form</h2>
+      <p class="sub">Bitte füllen Sie die folgenden Angaben aus. / Please fill in the details below.</p>
       <form id="registrationForm" method="POST" action="https://formspree.io/f/mjybozpp">
-        <input type="hidden" name="_subject" value="New Diwali registration">
+        <input type="hidden" name="_subject" value="Neue Diwali-Anmeldung / New Diwali registration">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
         <input type="hidden" id="totalAttendeesInput" name="totalAttendees" value="0">
         <input type="hidden" id="totalAmountInput" name="totalAmount" value="0">
-        <h3 class="group-title">Contact details</h3>
+        <h3 class="group-title">Kontaktdaten / Contact Details</h3>
         <div class="grid2">
-          <div class="field"><label>Full Name <span class="req">*</span></label><input name="name" autocomplete="name" placeholder="e.g. Priya Sharma" required></div>
-          <div class="field"><label>Email Address <span class="req">*</span></label><input name="email" type="email" autocomplete="email" placeholder="e.g. priya@example.com" required></div>
-          <div class="field"><label>Phone Number <span class="req">*</span></label><input name="phone" type="tel" autocomplete="tel" placeholder="e.g. +41 79 123 45 67" required></div>
-          <div class="field"><label>Address</label><input name="address" autocomplete="street-address" placeholder="Street, City, Postal Code"></div>
-          <div class="field"><label>Family / registration type</label><select name="familyType"><option>Family</option><option>Individual</option></select></div>
-          <div class="field"><label>Special Requirements / Dietary Restrictions?</label><input name="dietary" placeholder="Vegetarian, allergies, etc."></div>
+          <div class="field"><label>Vollständiger Name / Full Name <span class="req">*</span></label><input name="name" autocomplete="name" placeholder="z. B. / e.g. Priya Sharma" required></div>
+          <div class="field"><label>E-Mail-Adresse / Email Address <span class="req">*</span></label><input name="email" type="email" autocomplete="email" placeholder="z. B. / e.g. priya@example.com" required></div>
+          <div class="field"><label>Telefonnummer / Phone Number <span class="req">*</span></label><input name="phone" type="tel" autocomplete="tel" placeholder="z. B. / e.g. +41 79 123 45 67" required></div>
+          <div class="field"><label>Adresse / Address</label><input name="address" autocomplete="street-address" placeholder="Strasse, Ort, PLZ / Street, City, Postal Code"></div>
+          <div class="field"><label>Familie / Anmeldeart / Family / Registration Type</label><select name="familyType"><option>Familie / Family</option><option>Einzelperson / Individual</option></select></div>
+          <div class="field"><label>Besondere Anforderungen / Ernährungseinschränkungen? / Special Requirements / Dietary Restrictions?</label><input name="dietary" placeholder="Vegetarisch, Allergien usw. / Vegetarian, allergies, etc."></div>
         </div>
 
-        <h3 class="group-title">Attendee breakdown & pricing</h3>
-        <p class="attendee-intro">A family may include members, non-members and children. Enter the number in each category and the total will be calculated automatically.</p>
+        <h3 class="group-title">Teilnehmer & Preise / Attendee Breakdown & Pricing</h3>
+        <p class="attendee-intro">Eine Familie kann Mitglieder, Nichtmitglieder und Kinder umfassen. Geben Sie die Anzahl in jeder Kategorie ein; der Gesamtbetrag wird automatisch berechnet. / A family may include members, non-members and children. Enter the number in each category and the total will be calculated automatically.</p>
         <div class="attendees">
-          <div class="attendee"><div class="emoji">🧑‍🤝‍🧑</div><strong>Members</strong><div class="price">CHF 15</div><small>food + entry fees</small><div class="counter"><button type="button" data-for="members" data-step="-1">−</button><input id="members" name="members" type="number" min="0" max="50" value="0"><button type="button" data-for="members" data-step="1">+</button></div></div>
-          <div class="attendee"><div class="emoji">👤</div><strong>Non-Members</strong><div class="price">CHF 30</div><small>food + entry fees</small><div class="counter"><button type="button" data-for="nonMembers" data-step="-1">−</button><input id="nonMembers" name="nonMembers" type="number" min="0" max="50" value="0"><button type="button" data-for="nonMembers" data-step="1">+</button></div></div>
-          <div class="attendee"><div class="emoji">🧒</div><strong>Children</strong><div class="price">CHF 10</div><small>food + entry fees</small><div class="counter"><button type="button" data-for="children" data-step="-1">−</button><input id="children" name="children" type="number" min="0" max="50" value="0"><button type="button" data-for="children" data-step="1">+</button></div></div>
+          <div class="attendee"><div class="emoji">🧑‍🤝‍🧑</div><strong>Mitglieder / Members</strong><div class="price">CHF 15</div><small>Essen + Eintritt / food + entry fees</small><div class="counter"><button type="button" data-for="members" data-step="-1">−</button><input id="members" name="members" type="number" min="0" max="50" value="0"><button type="button" data-for="members" data-step="1">+</button></div></div>
+          <div class="attendee"><div class="emoji">👤</div><strong>Nichtmitglieder / Non-Members</strong><div class="price">CHF 30</div><small>Essen + Eintritt / food + entry fees</small><div class="counter"><button type="button" data-for="nonMembers" data-step="-1">−</button><input id="nonMembers" name="nonMembers" type="number" min="0" max="50" value="0"><button type="button" data-for="nonMembers" data-step="1">+</button></div></div>
+          <div class="attendee"><div class="emoji">🧒</div><strong>Kinder / Children</strong><div class="price">CHF 10</div><small>Essen + Eintritt / food + entry fees</small><div class="counter"><button type="button" data-for="children" data-step="-1">−</button><input id="children" name="children" type="number" min="0" max="50" value="0"><button type="button" data-for="children" data-step="1">+</button></div></div>
         </div>
-        <div class="totals"><div>👥 Total Attendees <strong id="totalPeople">0</strong></div><div>Total Amount (CHF) <strong id="totalAmount">CHF 0</strong></div></div>
+        <div class="totals"><div>👥 Teilnehmer gesamt / Total Attendees <strong id="totalPeople">0</strong></div><div>Gesamtbetrag (CHF) / Total Amount (CHF) <strong id="totalAmount">CHF 0</strong></div></div>
 
-        <h3 class="group-title">Additional information</h3>
-        <div class="field"><label>Additional Notes (Optional)</label><textarea name="notes" placeholder="Any additional information you would like to share?"></textarea></div>
-        <label class="check"><input name="insurance" type="checkbox" value="Yes" required><span>I confirm that participants are responsible for their own insurance. <span class="req">*</span></span></label>
-        <label class="check"><input name="payment" id="paymentConfirmed" type="checkbox" value="Yes" required><span><strong>I confirm that I have completed the payment using the QR code.</strong> <span class="req">*</span></span></label>
-        <label class="check"><input name="terms" type="checkbox" value="Yes" required><span>I confirm that the information above is correct and agree to the event terms. <span class="req">*</span></span></label>
-        <button class="submit" id="submitBtn" type="submit">🪔 &nbsp; Submit Registration</button>
+        <h3 class="group-title">Zusätzliche Informationen / Additional Information</h3>
+        <div class="field"><label>Zusätzliche Hinweise (optional) / Additional Notes (Optional)</label><textarea name="notes" placeholder="Weitere Informationen? / Any additional information you would like to share?"></textarea></div>
+        <label class="check"><input name="insurance" type="checkbox" value="Yes" required><span>Ich bestätige, dass die Teilnehmenden für ihre eigene Versicherung verantwortlich sind. / I confirm that participants are responsible for their own insurance. <span class="req">*</span></span></label>
+        <label class="check"><input name="payment" id="paymentConfirmed" type="checkbox" value="Yes" required><span><strong>Ich bestätige, dass ich die Zahlung über den QR-Code abgeschlossen habe. / I confirm that I have completed the payment using the QR code.</strong> <span class="req">*</span></span></label>
+        <label class="check"><input name="terms" type="checkbox" value="Yes" required><span>Ich bestätige, dass die oben genannten Angaben korrekt sind und akzeptiere die Veranstaltungsbedingungen. / I confirm that the information above is correct and agree to the event terms. <span class="req">*</span></span></label>
+        <button class="submit" id="submitBtn" type="submit">🪔 &nbsp; Anmeldung absenden / Submit Registration</button>
         <div id="status" class="status" aria-live="polite"></div>
-        <div class="privacy">🔒 Your information will only be used for this event.</div>
+        <div class="privacy">🔒 Ihre Angaben werden nur für diese Veranstaltung verwendet. / Your information will only be used for this event.</div>
       </form>
     </main>
 
     <aside class="side">
       <section class="panel">
-        <div class="pay-title">🪔 Price for the QR-Code</div>
+        <div class="pay-title">🪔 Preise / Prices</div>
         <div class="price-list">
-          <div class="price-row"><div class="bubble">👥</div><div><strong>Members – CHF 15</strong><br><small>Food + Entry fees</small></div></div>
-          <div class="price-row"><div class="bubble">👤</div><div><strong>Non-Members – CHF 30</strong><br><small>Food + Entry fees</small></div></div>
-          <div class="price-row"><div class="bubble">🧒</div><div><strong>Children – CHF 10</strong><br><small>Food + Entry fees</small></div></div>
+          <div class="price-row"><div class="bubble">👥</div><div><strong>Members – CHF 15</strong><br><small>Essen + Eintritt / Food + Entry fees</small></div></div>
+          <div class="price-row"><div class="bubble">👤</div><div><strong>Non-Members – CHF 30</strong><br><small>Essen + Eintritt / Food + Entry fees</small></div></div>
+          <div class="price-row"><div class="bubble">🧒</div><div><strong>Children – CHF 10</strong><br><small>Essen + Eintritt / Food + Entry fees</small></div></div>
         </div>
       </section>
       <section class="panel">
-        <div class="pay-title">🪔 PAYMENT</div>
-        <p>Please scan the QR Code below to complete your payment.</p>
-        <div class="qr"><div><img src="assets/payment-qr.jpg" alt="Payment QR code"><div class="qr-note">Scan to pay</div><div class="qr-help">Please complete payment before submitting your registration.</div></div></div>
+        <div class="pay-title">🪔 ZAHLUNG / PAYMENT</div>
+        <p>Bitte scannen Sie den QR-Code unten, um die Zahlung abzuschließen. / Please scan the QR Code below to complete your payment.</p>
+        <div class="qr"><div><img src="assets/payment-qr.jpg" alt="Payment QR code"><div class="qr-note">Zum Bezahlen scannen / Scan to pay</div><div class="qr-help">Bitte schließen Sie die Zahlung ab, bevor Sie die Anmeldung absenden. / Please complete payment before submitting your registration.</div></div></div>
       </section>
       <section class="panel important">
-        <h3>IMPORTANT</h3>
-        <p>Registration is confirmed only after successful payment.</p>
-        <p>Registration is by prebooking only.</p>
-        <p>Participants are responsible for their own insurance.</p>
-        <p>For any queries, please contact the event organizer.</p>
+        <h3>WICHTIG / IMPORTANT</h3>
+        <p>Die Anmeldung ist erst nach erfolgreicher Zahlung bestätigt. / Registration is confirmed only after successful payment.</p>
+        <p>Teilnahme nur mit Voranmeldung. / Registration is by prebooking only.</p>
+        <p>Die Teilnehmenden sind für ihre eigene Versicherung verantwortlich. / Participants are responsible for their own insurance.</p>
+        <p>Bei Fragen wenden Sie sich bitte an die Veranstaltungsorganisation. / For any queries, please contact the event organizer.</p>
       </section>
     </aside>
   </div>
-  <footer class="footer">🪔 Thank you for registering. We look forward to celebrating Diwali with you! 🪔</footer>
+  <footer class="footer">🪔 Vielen Dank für Ihre Anmeldung. Wir freuen uns darauf, Diwali mit Ihnen zu feiern! / Thank you for registering. We look forward to celebrating Diwali with you! 🪔</footer>
 </div>
 <script>
 (function () {
@@ -167,7 +167,7 @@
 
   function setSubmitting(isSubmitting) {
     submitBtn.disabled = isSubmitting;
-    submitBtn.textContent = isSubmitting ? 'Submitting...' : '🪔   Submit Registration';
+    submitBtn.textContent = isSubmitting ? 'Wird gesendet... / Submitting...' : '🪔   Anmeldung absenden / Submit Registration';
   }
 
   function showError(message) {
@@ -182,16 +182,16 @@
 
     if (totals.people < 1) {
       if (event && event.preventDefault) event.preventDefault();
-      showError('Please add at least one attendee.');
+      showError('Bitte fügen Sie mindestens eine teilnehmende Person hinzu. / Please add at least one attendee.');
       fields[0].focus();
       return false;
     }
 
     if (!paymentBox.checked) {
       if (event && event.preventDefault) event.preventDefault();
-      showError('Please confirm that you have completed the payment before submitting.');
+      showError('Bitte bestätigen Sie vor dem Absenden, dass Sie die Zahlung abgeschlossen haben. / Please confirm that you have completed the payment before submitting.');
       if (paymentBox.setCustomValidity) {
-        paymentBox.setCustomValidity('Please confirm that you have completed the payment before submitting.');
+        paymentBox.setCustomValidity('Bitte bestätigen Sie vor dem Absenden, dass Sie die Zahlung abgeschlossen haben. / Please confirm that you have completed the payment before submitting.');
       }
       if (paymentBox.reportValidity) paymentBox.reportValidity();
       paymentBox.focus();
